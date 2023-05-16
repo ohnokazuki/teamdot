@@ -1,0 +1,33 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class bulletbreak : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        // è’ìÀÇµÇΩëäéËÇ…PlayerÉ^ÉOÇ™ïtÇ¢ÇƒÇ¢ÇÈÇ∆Ç´
+        if (collision.gameObject.tag == "Wall")
+        {
+            Debug.Log("ìñÇΩÇ¡ÇΩ");
+            // 0.2ïbå„Ç…è¡Ç¶ÇÈ
+            Destroy(gameObject, 0.01f);
+        }
+        if(collision.gameObject.tag == "Enemy")
+        {
+            Destroy(this.gameObject, 0.01f);
+        }
+    }
+}
