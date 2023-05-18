@@ -7,7 +7,7 @@ public class enemychase : MonoBehaviour
     // Start is called before the first frame update
     private GameObject target;
     public float speed;
-
+    public int enemyhp;
     void Start()
     {
         //speed = 0.05f;
@@ -30,6 +30,18 @@ public class enemychase : MonoBehaviour
             Vector3 enemyForward = Vector3.Scale((target.transform.position - transform.position), new Vector3(1, 1, 0)).normalized;
             this.GetComponent<Rigidbody2D>().velocity = enemyForward * 0;
 
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Bullet")
+        {
+            enemyhp--;
+        }
+        if (enemyhp <= 0)
+        {
+            Destroy(this.gameObject, 0.01f);
         }
     }
 }
