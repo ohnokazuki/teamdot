@@ -4,16 +4,34 @@ using UnityEngine;
 
 public class bulletbreak : MonoBehaviour
 {
+    //ê∂ê¨Ç≥ÇÍÇƒÇ©ÇÁè¡Ç¶ÇÈÇ‹Ç≈ÇÃéûä‘
+    float deadTime = 5;
+
+    float time = 0;
+
     // Start is called before the first frame update
     void Start()
     {
         
     }
 
+    // call this function in update function
+    // àÍíËÇÃéûä‘Ç≈è¡Ç¶ÇÈÇÊÇ§Ç…ÇµÇƒÇ›ÇΩ
+    void destoryBulletByTime()
+    {
+        time += Time.deltaTime;
+        if(time > deadTime)
+        {
+            Debug.Log("éûä‘êÿÇÍ");
+            Destroy(gameObject);
+        }
+ 
+    }
+
     // Update is called once per frame
     void Update()
     {
-        
+        destoryBulletByTime();
     }
 
     void OnCollisionEnter2D(Collision2D collision)
