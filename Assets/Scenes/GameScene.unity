@@ -1139,6 +1139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isArea: 0
   speed: 5
+  timeScaleForSlowMotion: 0.2
 --- !u!58 &1252266565
 CircleCollider2D:
   m_ObjectHideFlags: 0
