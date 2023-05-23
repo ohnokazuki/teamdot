@@ -242,8 +242,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 46}
-  m_SizeDelta: {x: 532.4, y: 108.3469}
+  m_AnchoredPosition: {x: -0.0000038146973, y: 50.084988}
+  m_SizeDelta: {x: 616.6658, y: 100.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &843025790
 MonoBehaviour:
@@ -267,7 +267,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Game clear!
 
-    You escaped from this lab'
+    You successfully escaped this lab'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
