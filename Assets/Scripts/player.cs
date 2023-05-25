@@ -61,7 +61,7 @@ public class player : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("working ");
-        if (collision.name == "twoDoor")
+        if (collision.name == "ƒhƒA(2–‡)")
         {
             SceneManager.LoadScene("GameClear");
         }
