@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class player : MonoBehaviour
 {
@@ -54,6 +55,15 @@ public class player : MonoBehaviour
         else
         {
             Time.timeScale = originalTimeScale;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("working ");
+        if (collision.name == "twoDoor")
+        {
+            SceneManager.LoadScene("GameClear");
         }
     }
 
