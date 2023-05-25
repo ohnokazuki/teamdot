@@ -875,18 +875,14 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
 --- !u!1 &440245665
 GameObject:
-=======
 --- !u!61 &429877506
 BoxCollider2D:
->>>>>>> working
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   serializedVersion: 6
   m_Component:
   - component: {fileID: 440245667}
@@ -952,7 +948,6 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!4 &440245667
 Transform:
-=======
   m_GameObject: {fileID: 429877503}
   m_Enabled: 1
   m_Density: 1
@@ -976,12 +971,10 @@ Transform:
 --- !u!50 &429877507
 Rigidbody2D:
   serializedVersion: 4
->>>>>>> working
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 440245665}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 40.19, y: 51.5, z: 0}
@@ -1081,7 +1074,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
   m_GameObject: {fileID: 429877503}
   m_BodyType: 0
   m_Simulated: 1
@@ -1096,7 +1088,6 @@ Transform:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
->>>>>>> working
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
