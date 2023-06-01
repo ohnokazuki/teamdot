@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class setting : MonoBehaviour
+public class backButton : MonoBehaviour
 {
     [SerializeField]
-    string targetScene = "setting";
+    string targetScene = "Start";
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ public class setting : MonoBehaviour
         
     }
 
-    public void LoadSettingScene()
+    public void LoadStartScene()
     {
         SceneManager.LoadScene(targetScene);
     }
