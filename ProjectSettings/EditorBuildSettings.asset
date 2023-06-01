@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/stage/3Stage.unity
     guid: 3d1418c537f8a6a43a2b475c36f82adb
+  - enabled: 1
+    path: Assets/Scenes/UI/pauseMenu.unity
+    guid: e664ef4346263104e93f76dda105d446
   m_configObjects: {}
