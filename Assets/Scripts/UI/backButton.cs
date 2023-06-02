@@ -22,6 +22,11 @@ public class backButton : MonoBehaviour
 
     public void LoadStartScene()
     {
+        var objs = GameObject.FindObjectsOfType<GameObject>();
+        foreach (var obj in objs)
+        {
+            Destroy(obj);
+        }
         SceneManager.LoadScene(targetScene);
     }
 }

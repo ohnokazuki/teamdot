@@ -30,6 +30,6 @@ public class OpenPauseMenu : MonoBehaviour
 
     public void LoadPauseMenu()
     {
-        SceneManager.LoadScene(targetScene);
+        SceneManager.LoadSceneAsync(targetScene);
     }
 }

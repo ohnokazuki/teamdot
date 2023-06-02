@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class backToGame : MonoBehaviour
 {
     [SerializeField]
-    string targetScene = "pauseMenu";
+    string targetGameObj = "pauseMenu";
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +22,13 @@ public class backToGame : MonoBehaviour
 
     public void DestoryPauseMenu()
     {
-        SceneManager.UnloadSceneAsync(targetScene);
+        Debug.Log("Working " + targetGameObj);
+        //SceneManager.UnloadSceneAsync(targetGameObj);
+        var canvas = GameObject.FindGameObjectsWithTag(targetGameObj);
+        for(int i = 0; i < canvas.Length; i++)
+        {
+            canvas[i].gameObject.SetActive(false);
+        }
+
     }
 }
