@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -13,6 +14,9 @@ public class player : MonoBehaviour
     float timeScaleForSlowMotion = 0.5f;
     float originalTimeScale;
     float modifiedTimeScale;
+
+    static public string currentStage = "";
+    static public string nextStage = "";
 
     Rigidbody2D rb;
     // Start is called before the first frame update
