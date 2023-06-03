@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37415e2a30af2834dbbd83160fae41cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScene: setting
+  targetScene: settingInPause
 --- !u!1 &449395891
 GameObject:
   m_ObjectHideFlags: 0
@@ -671,7 +671,7 @@ GameObject:
   - component: {fileID: 1312195441}
   m_Layer: 0
   m_Name: EventSystem
-  m_TagString: Untagged
+  m_TagString: pauseMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

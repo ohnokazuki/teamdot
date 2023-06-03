@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Bullet
   - pauseMenu
+  - UI
+  - SettingInPauseMenu
   layers:
   - Default
   - TransparentFX

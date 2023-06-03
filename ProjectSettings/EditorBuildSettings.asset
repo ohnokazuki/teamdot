@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/UI/pauseMenu.unity
+    path: Assets/Scenes/UI/pause/pauseMenu.unity
     guid: e664ef4346263104e93f76dda105d446
   - enabled: 1
     path: Assets/Scenes/stage/2Stage.unity
@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/UI/MobileUI.unity
     guid: dee4428f8ba07a343a48f9f6601fbcf4
+  - enabled: 1
+    path: Assets/Scenes/UI/pause/settingInPause.unity
+    guid: 5f0a19fbc59d2664b9c8d4683de41cda
   m_configObjects: {}

@@ -591,7 +591,7 @@ GameObject:
   - component: {fileID: 660057867}
   m_Layer: 0
   m_Name: EventSystem
-  m_TagString: Untagged
+  m_TagString: SettingInPauseMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -904,6 +904,7 @@ GameObject:
   - component: {fileID: 735252688}
   - component: {fileID: 735252687}
   - component: {fileID: 735252690}
+  - component: {fileID: 735252691}
   m_Layer: 5
   m_Name: back
   m_TagString: Untagged
@@ -977,8 +978,20 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 735252690}
-        m_TargetAssemblyTypeName: backButton, Assembly-CSharp
-        m_MethodName: LoadStartScene
+        m_TargetAssemblyTypeName: activatePauseUI, Assembly-CSharp
+        m_MethodName: activatePauseUIFunc
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 735252691}
+        m_TargetAssemblyTypeName: backToPasueMenu, Assembly-CSharp
+        m_MethodName: DestorySettingUI
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1035,10 +1048,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 735252685}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0021751efff07bb48938fd18dcbcf9c3, type: 3}
+  m_Script: {fileID: 11500000, guid: 38e4e06c587cd1240b8f63645a68bb43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScene: Start
+--- !u!114 &735252691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735252685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe738cb6051932a449c79474e9c10be0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagName: SettingInPauseMenu
 --- !u!1 &755842955
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,7 +1153,7 @@ GameObject:
   - component: {fileID: 1131392674}
   m_Layer: 0
   m_Name: "\u7D20\u6750"
-  m_TagString: Untagged
+  m_TagString: SettingInPauseMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1501,7 +1526,7 @@ GameObject:
   - component: {fileID: 1388608311}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: MainCamera
+  m_TagString: SettingInPauseMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1523,7 +1548,7 @@ Camera:
   m_GameObject: {fileID: 1388608310}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 3
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -1542,10 +1567,10 @@ Camera:
   field of view: 60
   orthographic: 1
   orthographic size: 5
-  m_Depth: -1
+  m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 32
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -1623,7 +1648,7 @@ GameObject:
   - component: {fileID: 1498196680}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: SettingInPauseMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1859,6 +1884,7 @@ GameObject:
   - component: {fileID: 1797125514}
   - component: {fileID: 1797125516}
   - component: {fileID: 1797125515}
+  - component: {fileID: 1797125517}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1985,6 +2011,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1797125513}
   m_CullTransparentMesh: 1
+--- !u!114 &1797125517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797125513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe738cb6051932a449c79474e9c10be0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagName: SettingInPauseMenu
 --- !u!1 &2046810769
 GameObject:
   m_ObjectHideFlags: 0
@@ -1995,9 +2034,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2046810771}
   - component: {fileID: 2046810770}
+  - component: {fileID: 2046810772}
   m_Layer: 0
   m_Name: settingInit
-  m_TagString: Untagged
+  m_TagString: SettingInPauseMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2029,6 +2069,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2046810772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046810769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02599128350f12c4eb36056f396b8463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2126539724
 GameObject:
   m_ObjectHideFlags: 0
