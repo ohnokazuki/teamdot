@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,7 +8,7 @@ public class player : MonoBehaviour
     public bool isArea;
 
     [SerializeField]
-    public float speed = 5.0f;
+    static public float speed = 5.0f;
     [SerializeField]
     float timeScaleForSlowMotion = 0.5f;
     float originalTimeScale;
@@ -18,6 +17,8 @@ public class player : MonoBehaviour
     static public string currentStage = "";
     static public string nextStage = "";
 
+    static public Transform playerTrans;
+
     Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,10 @@ public class player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         originalTimeScale = Time.timeScale;
         modifiedTimeScale = Time.timeScale * timeScaleForSlowMotion;
+        playerTrans = transform;
+
+        //Load mobile UI settings
+        gameObject.AddComponent<LoadMobileUI>();
     }
 
     // Update is called once per frame
