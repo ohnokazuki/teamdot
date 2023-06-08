@@ -15,6 +15,8 @@ public class setCurrentStage : MonoBehaviour
         player.currentStage = currentStage;
         player.nextStage = nextStage;
         Debug.Log("The next stage is " + player.nextStage);
+
+        player.movable = true;
     }
 
     // Update is called once per frame

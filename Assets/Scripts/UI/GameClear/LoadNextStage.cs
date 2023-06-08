@@ -25,6 +25,11 @@ public class LoadNextStage : MonoBehaviour
         var test = GameObject.FindObjectsOfType<GameObject>();
         foreach (var t in test)
         {
+            if(player.nextStage == "End" && t.name == "Player")
+            {                    
+                    continue;
+            }
+
             Destroy(t);
         }
 

@@ -16,6 +16,10 @@ public class player : MonoBehaviour
 
     static public string currentStage = "";
     static public string nextStage = "";
+    static public int killedEnemy = 0;
+
+    static public bool movable = true;
+
 
     static public Transform playerTrans;
 
@@ -42,17 +46,20 @@ public class player : MonoBehaviour
 
     void Operation()
     {
-        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
-            transform.position += transform.up * speed * Time.deltaTime;
+        if (movable)
+        {
+            if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
+                transform.position += transform.up * speed * Time.deltaTime;
 
-        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
-            transform.position -= transform.up * speed * Time.deltaTime;
+            if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
+                transform.position -= transform.up * speed * Time.deltaTime;
 
-        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
-            transform.position += transform.right * speed * Time.deltaTime;
+            if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
+                transform.position += transform.right * speed * Time.deltaTime;
 
-        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
-            transform.position -= transform.right * speed * Time.deltaTime;
+            if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
+                transform.position -= transform.right * speed * Time.deltaTime;
+        }
     }
 
     void slowMotion()
@@ -73,6 +80,9 @@ public class player : MonoBehaviour
         if (collision.name == "ƒhƒA(2–‡)")
         {
             SceneManager.LoadScene("GameClear");
+            killedEnemy ++;
+            Debug.Log("current killedEnemy" + killedEnemy);
+            movable = false;
         }
     }
 
