@@ -10,7 +10,7 @@ public class showScore : MonoBehaviour
     {
         GameObject Aplayer = GameObject.FindGameObjectWithTag("Player");
         Text textScore = gameObject.GetComponent<Text>();
-        textScore.text = player.score.ToString();
+        textScore.text = player.killedEnemy.ToString();
     }
 
     // Update is called once per frame
