@@ -3150,7 +3150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c56634e0aaa694488e2516ec122ed76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletprefab: {fileID: 2289065120196962367, guid: 320ee7842062b884a9b27c0a1bf2518a, type: 3}
+  bulletprefab: {fileID: 3482312837427636904, guid: 62dfebf73c1a57342b4e00b8d13fe544, type: 3}
   interval: 1
 --- !u!1 &1109507442
 GameObject:
@@ -3757,7 +3757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f69e83bd30440b940863a0a85adf2890, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletprefab: {fileID: 3482312837427636904, guid: 62dfebf73c1a57342b4e00b8d13fe544, type: 3}
+  bulletprefab: {fileID: 2289065120196962367, guid: 320ee7842062b884a9b27c0a1bf2518a, type: 3}
 --- !u!61 &1252266569
 BoxCollider2D:
   m_ObjectHideFlags: 0
