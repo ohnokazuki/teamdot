@@ -9,22 +9,22 @@ public class player : MonoBehaviour
     public bool isArea;
 
     [SerializeField]
-    static public float speed = 5.0f;
+    static public float speed;
     [SerializeField]
-    float timeScaleForSlowMotion = 0.5f;
+    float timeScaleForSlowMotion;
     float originalTimeScale;
     float modifiedTimeScale;
 
-    static public string currentStage = "";
-    static public string nextStage = "";
-    static public int killedEnemy = 0;
+    static public string currentStage;
+    static public string nextStage;
+    static public int killedEnemy;
 
-    static public Vector3 itemPlace = Vector3.zero;
+    static public Vector3 itemPlace;
 
     // keep items which player have
     static public List<string> items;
 
-    static public bool movable = true;
+    static public bool movable;
 
 
     static public Transform playerTrans;
@@ -38,6 +38,12 @@ public class player : MonoBehaviour
         modifiedTimeScale = Time.timeScale * timeScaleForSlowMotion;
         playerTrans = transform;
         items = new List<string>();
+        speed = 15.0f;
+        killedEnemy = 0;
+        timeScaleForSlowMotion = 0.5f;
+        itemPlace = Vector3.zero;
+        movable = true;
+
 
         //Load mobile UI settings
         gameObject.AddComponent<LoadMobileUI>();
@@ -48,7 +54,6 @@ public class player : MonoBehaviour
     {
         Operation();
         slowMotion();
-        KeyInput();
         rb.velocity = Vector2.zero;
     }
 
@@ -68,6 +73,10 @@ public class player : MonoBehaviour
             if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
                 transform.position -= transform.right * speed * Time.deltaTime;
         }
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            LoadPauseMenu();
+        }
     }
 
     void slowMotion()
@@ -82,13 +91,6 @@ public class player : MonoBehaviour
         }
     }
 
-    void KeyInput()
-    {
-        if (Input.GetKey(KeyCode.Escape))
-        {
-            LoadPauseMenu();
-        }
-    }
 
     public void LoadPauseMenu()
     {
