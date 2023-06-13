@@ -18,6 +18,9 @@ public class player : MonoBehaviour
     static public string nextStage = "";
     static public int killedEnemy = 0;
 
+    // keep items which player have
+    static public List<string> items;
+
     static public bool movable = true;
 
 
@@ -31,6 +34,7 @@ public class player : MonoBehaviour
         originalTimeScale = Time.timeScale;
         modifiedTimeScale = Time.timeScale * timeScaleForSlowMotion;
         playerTrans = transform;
+        items = new List<string>();
 
         //Load mobile UI settings
         gameObject.AddComponent<LoadMobileUI>();
