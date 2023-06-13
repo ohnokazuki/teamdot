@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -17,6 +18,8 @@ public class player : MonoBehaviour
     static public string currentStage = "";
     static public string nextStage = "";
     static public int killedEnemy = 0;
+
+    static public Vector3 itemPlace = Vector3.zero;
 
     // keep items which player have
     static public List<string> items;
@@ -45,6 +48,7 @@ public class player : MonoBehaviour
     {
         Operation();
         slowMotion();
+        updateItem();
         rb.velocity = Vector2.zero;
     }
 
@@ -77,6 +81,7 @@ public class player : MonoBehaviour
             Time.timeScale = originalTimeScale;
         }
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
