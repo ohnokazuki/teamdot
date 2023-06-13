@@ -99,8 +99,9 @@ public class player : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("working ");
-        if (collision.name == "ドア(2枚)")
+        if (collision.name == "ドア(2枚)" || collision.name == "doorOpen")
         {
+            Debug.Log("if is working");
             items.ForEach(item =>
             {
                 if (item == "card key")
