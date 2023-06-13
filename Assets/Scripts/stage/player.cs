@@ -83,10 +83,14 @@ public class player : MonoBehaviour
         Debug.Log("working ");
         if (collision.name == "ƒhƒA(2–‡)")
         {
-            SceneManager.LoadScene("GameClear");
-            killedEnemy ++;
-            Debug.Log("current killedEnemy" + killedEnemy);
-            movable = false;
+            items.ForEach(item =>
+            {
+                if (item == "card key")
+                {
+                    SceneManager.LoadScene("GameClear");
+                    movable = false;
+                }
+            });
         }
     }
 
