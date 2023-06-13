@@ -469,6 +469,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mask(obj)
       objectReference: {fileID: 0}
+    - target: {fileID: 8866748710704962830, guid: ad47e126d2672d2478fc67f2df12b3cf, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad47e126d2672d2478fc67f2df12b3cf, type: 3}
 --- !u!1 &246694851
@@ -3236,6 +3240,23 @@ Transform:
   m_Father: {fileID: 1143977983}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1133339400 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8322619331395858990, guid: 704b4fbc10009c1448bf1ccd7ff92b92, type: 3}
+  m_PrefabInstance: {fileID: 1364009007}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1133339405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133339400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b78324b55dace204ba31ea3a664c073c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1143977981
 GameObject:
   m_ObjectHideFlags: 0
@@ -4253,6 +4274,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 948113135325067988, guid: 704b4fbc10009c1448bf1ccd7ff92b92, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1639242903108214681, guid: 704b4fbc10009c1448bf1ccd7ff92b92, type: 3}
       propertyPath: m_RootOrder
       value: 1

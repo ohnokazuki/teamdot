@@ -18,6 +18,9 @@ public class player : MonoBehaviour
     static public string nextStage = "";
     static public int killedEnemy = 0;
 
+    // keep items which player have
+    static public List<string> items;
+
     static public bool movable = true;
 
 
@@ -31,6 +34,7 @@ public class player : MonoBehaviour
         originalTimeScale = Time.timeScale;
         modifiedTimeScale = Time.timeScale * timeScaleForSlowMotion;
         playerTrans = transform;
+        items = new List<string>();
 
         //Load mobile UI settings
         gameObject.AddComponent<LoadMobileUI>();
@@ -79,10 +83,14 @@ public class player : MonoBehaviour
         Debug.Log("working ");
         if (collision.name == "ƒhƒA(2–‡)")
         {
-            SceneManager.LoadScene("GameClear");
-            killedEnemy ++;
-            Debug.Log("current killedEnemy" + killedEnemy);
-            movable = false;
+            items.ForEach(item =>
+            {
+                if (item == "card key")
+                {
+                    SceneManager.LoadScene("GameClear");
+                    movable = false;
+                }
+            });
         }
     }
 
