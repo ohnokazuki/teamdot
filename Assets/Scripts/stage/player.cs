@@ -48,7 +48,7 @@ public class player : MonoBehaviour
     {
         Operation();
         slowMotion();
-        updateItem();
+        KeyInput();
         rb.velocity = Vector2.zero;
     }
 
@@ -80,6 +80,19 @@ public class player : MonoBehaviour
         {
             Time.timeScale = originalTimeScale;
         }
+    }
+
+    void KeyInput()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            LoadPauseMenu();
+        }
+    }
+
+    public void LoadPauseMenu()
+    {
+        SceneManager.LoadSceneAsync("pauseMenu");
     }
 
 
