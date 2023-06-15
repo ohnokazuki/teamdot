@@ -48,7 +48,6 @@ public class player : MonoBehaviour
     {
         Operation();
         slowMotion();
-        updateItem();
         rb.velocity = Vector2.zero;
     }
 
