@@ -467,6 +467,7 @@ GameObject:
   - component: {fileID: 291654043}
   - component: {fileID: 291654045}
   - component: {fileID: 291654044}
+  - component: {fileID: 291654046}
   m_Layer: 0
   m_Name: none 1
   m_TagString: Untagged
@@ -576,6 +577,27 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!50 &291654046
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291654042}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &297312042
 GameObject:
   m_ObjectHideFlags: 0
@@ -1141,6 +1163,7 @@ GameObject:
   - component: {fileID: 569746424}
   - component: {fileID: 569746426}
   - component: {fileID: 569746425}
+  - component: {fileID: 569746427}
   m_Layer: 0
   m_Name: door
   m_TagString: Untagged
@@ -1308,6 +1331,27 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!50 &569746427
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569746423}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &616149023
 GameObject:
   m_ObjectHideFlags: 0
@@ -1663,6 +1707,7 @@ GameObject:
   - component: {fileID: 848232942}
   - component: {fileID: 848232944}
   - component: {fileID: 848232943}
+  - component: {fileID: 848232945}
   m_Layer: 0
   m_Name: invisible wall 1
   m_TagString: Untagged
@@ -2598,6 +2643,27 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!50 &848232945
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848232941}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &978414985
 GameObject:
   m_ObjectHideFlags: 0
@@ -4090,6 +4156,7 @@ GameObject:
   - component: {fileID: 1488982258}
   - component: {fileID: 1488982260}
   - component: {fileID: 1488982259}
+  - component: {fileID: 1488982261}
   m_Layer: 0
   m_Name: floor and wall
   m_TagString: Untagged
@@ -9741,6 +9808,27 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!50 &1488982261
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488982257}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1596076761
 GameObject:
   m_ObjectHideFlags: 0
@@ -10033,6 +10121,7 @@ GameObject:
   - component: {fileID: 1678869079}
   - component: {fileID: 1678869081}
   - component: {fileID: 1678869080}
+  - component: {fileID: 1678869082}
   m_Layer: 0
   m_Name: door outline
   m_TagString: Untagged
@@ -10210,6 +10299,27 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!50 &1678869082
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678869078}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1733141923
 GameObject:
   m_ObjectHideFlags: 0
@@ -10532,6 +10642,7 @@ GameObject:
   - component: {fileID: 1799313173}
   - component: {fileID: 1799313175}
   - component: {fileID: 1799313174}
+  - component: {fileID: 1799313176}
   m_Layer: 0
   m_Name: none
   m_TagString: Untagged
@@ -10641,6 +10752,27 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!50 &1799313176
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799313172}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1805061835
 GameObject:
   m_ObjectHideFlags: 0
@@ -10857,6 +10989,7 @@ GameObject:
   - component: {fileID: 1866812556}
   - component: {fileID: 1866812558}
   - component: {fileID: 1866812557}
+  - component: {fileID: 1866812559}
   m_Layer: 0
   m_Name: invisible wall
   m_TagString: Untagged
@@ -11042,6 +11175,27 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!50 &1866812559
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866812555}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1868314425
 GameObject:
   m_ObjectHideFlags: 0
