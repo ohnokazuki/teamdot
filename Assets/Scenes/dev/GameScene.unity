@@ -468,7 +468,7 @@ GameObject:
   - component: {fileID: 291654045}
   - component: {fileID: 291654044}
   m_Layer: 0
-  m_Name: Tilemap_4
+  m_Name: none 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1142,7 +1142,7 @@ GameObject:
   - component: {fileID: 569746426}
   - component: {fileID: 569746425}
   m_Layer: 0
-  m_Name: Tilemap_2
+  m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1664,7 +1664,7 @@ GameObject:
   - component: {fileID: 848232944}
   - component: {fileID: 848232943}
   m_Layer: 0
-  m_Name: Tilemap_6
+  m_Name: invisible wall 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4064,7 +4064,7 @@ GameObject:
   - component: {fileID: 1488982260}
   - component: {fileID: 1488982259}
   m_Layer: 0
-  m_Name: Tilemap
+  m_Name: floor and wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10007,7 +10007,7 @@ GameObject:
   - component: {fileID: 1678869081}
   - component: {fileID: 1678869080}
   m_Layer: 0
-  m_Name: Tilemap_1
+  m_Name: door outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10506,7 +10506,7 @@ GameObject:
   - component: {fileID: 1799313175}
   - component: {fileID: 1799313174}
   m_Layer: 0
-  m_Name: Tilemap_3
+  m_Name: none
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10831,7 +10831,7 @@ GameObject:
   - component: {fileID: 1866812558}
   - component: {fileID: 1866812557}
   m_Layer: 0
-  m_Name: Tilemap_5
+  m_Name: invisible wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
