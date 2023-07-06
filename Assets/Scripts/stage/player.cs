@@ -29,15 +29,26 @@ public class player : MonoBehaviour
 
     static public Transform playerTrans;
 
+    // hp bar obj
+    HP HPbar;
+    [SerializeField]
+    float maxHP;
+    float currentHP;
+
     Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        HPbar = GetComponentInChildren<HP>();
         originalTimeScale = Time.timeScale;
         modifiedTimeScale = Time.timeScale * timeScaleForSlowMotion;
         playerTrans = transform;
         items = new List<string>();
+
+        // init hp bar
+        currentHP = maxHP;
+        HPbar.initHP(currentHP);
 
         //Load mobile UI settings
         gameObject.AddComponent<LoadMobileUI>();
