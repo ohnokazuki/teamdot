@@ -6,12 +6,20 @@ public class enemychase : MonoBehaviour
 {
     // Start is called before the first frame update
     private GameObject target;
+    [SerializeField]
     public float speed;
+    [SerializeField]
     public int enemyhp;
+
+    // hp bar 
+    HP HPbar;
+
     void Start()
     {
         //speed = 0.05f;
         target = GameObject.Find("Player");
+        HPbar = GetComponentInChildren<HP>();
+        HPbar.initHP(enemyhp);
     }
 
     void Update()
@@ -35,9 +43,11 @@ public class enemychase : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log("collide things to enemy");
         if (collision.gameObject.tag == "Bullet")
         {
             enemyhp--;
+            HPbar.setHP(enemyhp);
         }
         if (enemyhp <= 0)
         {
