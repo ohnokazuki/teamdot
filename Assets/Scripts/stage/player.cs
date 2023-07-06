@@ -11,6 +11,9 @@ public class player : MonoBehaviour
     [SerializeField]
     static public float speed = 5.0f;
     [SerializeField]
+    float defaultSpeed;
+
+    [SerializeField]
     float timeScaleForSlowMotion = 0.5f;
     float originalTimeScale;
     float modifiedTimeScale;
@@ -52,6 +55,8 @@ public class player : MonoBehaviour
 
         //Load mobile UI settings
         gameObject.AddComponent<LoadMobileUI>();
+
+        speed = defaultSpeed;
     }
 
     // Update is called once per frame
@@ -92,12 +97,24 @@ public class player : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log("working ");
+    {   
+        if(collision.name == "bulletPrefab")
+        {
+            Debug.Log("bullet is hit to player");
+            float tempDamage = 2;
+            currentHP -= tempDamage;
+            HPbar.setHP(currentHP);
+        }
+
         if (collision.name == "ƒhƒA(2–‡)")
         {
+            Debug.Log("working end stage code");
             items.ForEach(item =>
             {
                 if (item == "card key")
