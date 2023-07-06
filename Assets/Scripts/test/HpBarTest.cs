@@ -15,6 +15,8 @@ public class HpBarTest : MonoBehaviour
         hp = 0; maxHp = 10; delta = 0.1f;
         HPBar = gameObject.GetComponentInChildren<HP>();
         Debug.Log("Test script: " + HPBar.name + " is found");
+
+        HPBar.initHP(maxHp);
     }
 
     // Update is called once per frame

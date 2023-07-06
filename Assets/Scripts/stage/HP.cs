@@ -7,8 +7,8 @@ public class HP : MonoBehaviour
 {
 
     // max HP should be set
-    static public float maxHP;
-    static public float currentHP;
+    float maxHP;
+    float currentHP;
 
     [SerializeField]
     GameObject HP_G_bar, HP_empty_bar;
@@ -17,6 +17,7 @@ public class HP : MonoBehaviour
     // scale setting
     [SerializeField] float scale = 1;
     Vector3 barScale;
+    Vector3 newBarScale;
 
     float HP_rate;
 
@@ -26,34 +27,35 @@ public class HP : MonoBehaviour
     void Start()
     {
         currentHP = maxHP;
-        //HP_bars = GameObject.
-        //foreach (GameObject bars in HP_bars)
-        //{
-        //    if(bars.name  == "HP(G)") HP_G_bar = bars;
-        //    if(bars.name  == "HP(empty)") HP_empty_bar = bars;
 
-        //    Debug.Log(bars.name + " is found");
-        //}
-
-
-        GameObject.Instantiate<GameObject>(HP_G_bar);
-        GameObject.Instantiate<GameObject>(HP_empty_bar);
+        //GameObject.Instantiate<GameObject>(HP_G_bar);
+        //GameObject.Instantiate<GameObject>(HP_empty_bar);
 
         barScale =  HP_G_bar.transform.transform.localScale;
+        Debug.Log("hp init " + barScale);
         HP_rate = 1;
     }
 
+    public void initHP(float maxHP)
+    {
+        this.maxHP = maxHP;
+        this.currentHP = maxHP;
+    }
 
     // set hp when target hp is changed
     // if hp becane lower 0 return false that mean target is dead.
     public bool setHP(float hp)
     {
-        currentHP += hp;
-        if(currentHP > 0) return true;
-        else return false;
+        currentHP = hp;
 
         HP_rate = currentHP / maxHP;
-        HP_G_bar.transform.transform.localScale = new Vector3(barScale.x * HP_rate, barScale.y, barScale.z);
+        newBarScale = barScale;
+        newBarScale.x = barScale.x * HP_rate;
+        Debug.Log("set HP " + newBarScale + "\n" + barScale);
+        HP_G_bar.transform.transform.localScale = newBarScale;
+
+        if (currentHP > 0) return true;
+        else return false;
     }
 
 
