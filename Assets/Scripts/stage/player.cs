@@ -28,6 +28,7 @@ public class player : MonoBehaviour
     static public List<string> items;
 
     static public bool movable = true;
+    bool stuckWall = false;
 
 
     static public Transform playerTrans;
@@ -56,6 +57,7 @@ public class player : MonoBehaviour
         //Load mobile UI settings
         gameObject.AddComponent<LoadMobileUI>();
 
+        stuckWall = false;
         speed = defaultSpeed;
     }
 
@@ -97,11 +99,6 @@ public class player : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {   
         if(collision.name == "bulletPrefab")
@@ -112,7 +109,7 @@ public class player : MonoBehaviour
             HPbar.setHP(currentHP);
         }
 
-        if (collision.name == "ƒhƒA(2–‡)")
+        if (collision.name == "ï¿½hï¿½A(2ï¿½ï¿½)")
         {
             Debug.Log("working end stage code");
             items.ForEach(item =>
@@ -123,6 +120,11 @@ public class player : MonoBehaviour
                     movable = false;
                 }
             });
+        }
+
+        if(collision.name == "invisible wall"){
+            Debug.Log("stuck wall");
+            stuckWall = true;
         }
     }
 
@@ -139,6 +141,11 @@ public class player : MonoBehaviour
         if (other.gameObject.name == "DangerArea")
         {
             isArea = false;
+        }
+
+        if(other.name == "invisible wall"){
+            Debug.Log("leave wall");
+            stuckWall = false;
         }
     }
 }
