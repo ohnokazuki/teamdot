@@ -40,6 +40,10 @@ public class player : MonoBehaviour
     float currentHP;
 
     Rigidbody2D rb;
+
+    [SerializeField]
+    float addForceRate = 10;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -64,7 +68,8 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Operation();
+        //Operation();
+        OperationRigBodyEditon();
         slowMotion();
         rb.velocity = Vector2.zero;
     }
@@ -91,16 +96,16 @@ public class player : MonoBehaviour
         if (movable)
         {
             if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
-                transform.position += transform.up * speed * Time.deltaTime;
+                rb.AddForce(new Vector3(0,speed * addForceRate,0)); 
 
             if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
-                transform.position -= transform.up * speed * Time.deltaTime;
+                rb.AddForce(new Vector3(0, -speed * addForceRate, 0));
 
             if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
-                transform.position += transform.right * speed * Time.deltaTime;
+                rb.AddForce(new Vector3(speed * addForceRate, 0, 0));
 
             if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
-                transform.position -= transform.right * speed * Time.deltaTime;
+                rb.AddForce(new Vector3(-speed * addForceRate, 0, 0));
         }
     }
 

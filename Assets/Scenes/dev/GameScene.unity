@@ -3162,6 +3162,7 @@ MonoBehaviour:
   defaultSpeed: 20
   timeScaleForSlowMotion: 0.2
   maxHP: 10
+  addForceRate: 20
 --- !u!58 &1252266565
 CircleCollider2D:
   m_ObjectHideFlags: 0
