@@ -490,7 +490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetStages:
-  - 1Stage
+  - GameScene
   - 2Stage
   - 3Stage
 --- !u!1 &815684552
