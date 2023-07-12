@@ -550,6 +550,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e54bd23d97ca2774d82b77b91617accc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorTile: {fileID: 308872262}
+  nothing: {fileID: 11400000, guid: 038fb281f6c70b240bc0de0df7b7bda8, type: 2}
 --- !u!50 &308872264
 Rigidbody2D:
   serializedVersion: 4
