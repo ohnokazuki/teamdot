@@ -13,4 +13,5 @@ public class openDoor : MonoBehaviour
         Debug.Log("hey guys! I'm tile map collider!");
     }
 
+
 }
