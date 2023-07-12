@@ -16,9 +16,9 @@ public class showMessageBox : MonoBehaviour
     // get title and content game obj from children
     private void Start()
     {
-        background = GetComponentInChildren<GameObject>();
-        titleOBJ = background.GetComponentInChildren<TextMeshPro>();
-        contentOBJ = background.GetComponentInChildren<TextMeshPro>();
+        //background = GetComponentInChildren<GameObject>();
+        titleOBJ = GetComponentInChildren<TextMeshPro>();
+        contentOBJ = GetComponentInChildren<TextMeshPro>();
 
         Debug.Log("obj in showMessageBox.cs");
         Debug.Log(background.name);

@@ -353,6 +353,8 @@ GameObject:
   - component: {fileID: 308872262}
   - component: {fileID: 308872261}
   - component: {fileID: 308872263}
+  - component: {fileID: 308872264}
+  - component: {fileID: 308872265}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
@@ -548,7 +550,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e54bd23d97ca2774d82b77b91617accc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doors: []
+--- !u!50 &308872264
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308872259}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!19719996 &308872265
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308872259}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!1001 &390739462
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -562,11 +600,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1256319479412785034, guid: 9a18d388c9d86b54794d680e5af89fc3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -153.57
+      value: -109.77
       objectReference: {fileID: 0}
     - target: {fileID: 1256319479412785034, guid: 9a18d388c9d86b54794d680e5af89fc3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.1
+      value: -11.4
       objectReference: {fileID: 0}
     - target: {fileID: 1256319479412785034, guid: 9a18d388c9d86b54794d680e5af89fc3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2152,8 +2190,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406031970}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_LocalPosition: {x: 42.6, y: 0, z: 0}
+  m_LocalScale: {x: 3.6599998, y: 3.6599998, z: 3.6599998}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 529533437}

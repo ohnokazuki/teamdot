@@ -1,24 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class openDoor : MonoBehaviour
 {
-    [SerializeField]
-    List<string> doors = new List<string>();
-    
-    private void OnTriggerEnter2D(Collider2D collision)
+
+    Tile doorTile;
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        doors.ForEach(door =>
-        {
-            if(collision.name == door)
-            {
-                GameObject targetDoor = collision.gameObject;
-                if(targetDoor != null)
-                {
-                    targetDoor.SetActive(false);
-                }
-            }
-        });
+        Debug.Log("hey guys! I'm tile map collider!");
     }
+
 }
