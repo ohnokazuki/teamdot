@@ -51,7 +51,7 @@ public class HP : MonoBehaviour
         HP_rate = currentHP / maxHP;
         newBarScale = barScale;
         newBarScale.x = barScale.x * HP_rate;
-        Debug.Log("set HP " + newBarScale + "\n" + barScale);
+        // Debug.Log("set HP " + newBarScale + "\n" + barScale);
         HP_G_bar.transform.transform.localScale = newBarScale;
 
         if (currentHP > 0) return true;
