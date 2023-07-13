@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 1256319479412785033}
   - component: {fileID: 1256319479412785038}
   - component: {fileID: 1256319479412785029}
-  - component: {fileID: 1256319479412785031}
   - component: {fileID: 1256319479412785030}
   - component: {fileID: 1256319479412785025}
   m_Layer: 0
@@ -188,20 +187,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletprefab: {fileID: 3482312837427636904, guid: 62dfebf73c1a57342b4e00b8d13fe544, type: 3}
---- !u!114 &1256319479412785031
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1256319479412785039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e54bd23d97ca2774d82b77b91617accc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  doors:
-  - door1
 --- !u!114 &1256319479412785030
 MonoBehaviour:
   m_ObjectHideFlags: 0
