@@ -5,10 +5,15 @@ using UnityEngine;
 
 public class showMessageBox : MonoBehaviour
 {
-
+    [SerializeField]
     GameObject background;
-    TextMeshPro titleOBJ;
-    TextMeshPro contentOBJ;
+    [SerializeField]
+    GameObject titleOBJ;
+    [SerializeField]
+    GameObject contentOBJ;
+
+    TextMeshPro titleMesh;
+    TextMeshPro contentMesh;
 
     string title;
     string textContent;
@@ -16,25 +21,24 @@ public class showMessageBox : MonoBehaviour
     // get title and content game obj from children
     private void Start()
     {
-        background = GetComponentInChildren<GameObject>();
-        titleOBJ = GetComponentInChildren<TextMeshPro>();
-        contentOBJ = GetComponentInChildren<TextMeshPro>();
-
         Debug.Log("obj in showMessageBox.cs");
         Debug.Log(background.name);
         Debug.Log(titleOBJ.name);
         Debug.Log(contentOBJ.name);
+
+        titleMesh = titleOBJ.GetComponent<TextMeshPro>();
+        contentMesh = contentOBJ.GetComponent<TextMeshPro>();
     }
 
     public void setTitle(string title)
     {
         this.title = title;
-        titleOBJ.text = this.title;
+        titleMesh.text = this.title;
     }
 
     public void setText(string text)
     {
         this.textContent = text;
-        contentOBJ.text = textContent;
+        contentMesh.text = textContent;
     }
 }
