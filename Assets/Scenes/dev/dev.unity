@@ -552,6 +552,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorTile: {fileID: 308872262}
   nothing: {fileID: 11400000, guid: 038fb281f6c70b240bc0de0df7b7bda8, type: 2}
+  Grid: {fileID: 1406031970}
 --- !u!50 &308872264
 Rigidbody2D:
   serializedVersion: 4
