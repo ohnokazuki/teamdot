@@ -14,7 +14,7 @@ public class HpBarTest : MonoBehaviour
     {
         hp = 0; maxHp = 10; delta = 0.1f;
         HPBar = gameObject.GetComponentInChildren<HP>();
-        Debug.Log("Test script: " + HPBar.name + " is found");
+        // Debug.Log("Test script: " + HPBar.name + " is found");
 
         HPBar.initHP(maxHp);
     }
@@ -24,7 +24,7 @@ public class HpBarTest : MonoBehaviour
     {
         if (hp < maxHp) hp += delta;
         else hp = 0;
-        Debug.Log("HP is " + hp);
+        // Debug.Log("HP is " + hp);
         HPBar.setHP(hp);
     }
 }
