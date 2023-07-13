@@ -26,6 +26,7 @@ public class showMessageBox : MonoBehaviour
         Debug.Log(titleOBJ.name);
         Debug.Log(contentOBJ.name);
 
+
         titleMesh = titleOBJ.GetComponent<TextMeshPro>();
         contentMesh = contentOBJ.GetComponent<TextMeshPro>();
     }
