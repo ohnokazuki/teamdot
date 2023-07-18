@@ -13371,6 +13371,7 @@ GameObject:
   - component: {fileID: 1861087533}
   - component: {fileID: 1861087532}
   - component: {fileID: 1861087534}
+  - component: {fileID: 1861087535}
   m_Layer: 0
   m_Name: furniture_1
   m_TagString: Untagged
@@ -15827,7 +15828,7 @@ TilemapCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1861087530}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -15836,6 +15837,19 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!114 &1861087535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861087530}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2696bf0f5a82da24c886a50d85d72aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilemap: {fileID: 1861087533}
 --- !u!1 &1866812555
 GameObject:
   m_ObjectHideFlags: 0
@@ -19152,7 +19166,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3511308694114324444, guid: 704b4fbc10009c1448bf1ccd7ff92b92, type: 3}
       propertyPath: m_SortingOrder
-      value: 14
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8322619331395858990, guid: 704b4fbc10009c1448bf1ccd7ff92b92, type: 3}
       propertyPath: m_Name
